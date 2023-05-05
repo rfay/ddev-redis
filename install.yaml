@@ -23,4 +23,4 @@ post_install_actions:
 removal_actions:
 - |
   #ddev-description:Remove redis settings for Drupal 9+ if applicable
-  rm -f ${DDEV_APPROOT}/${DDEV_DOCROOT}/sites/default/settings.ddev.redis.php
+  redis/scripts/remove-drupal-settings.sh
